@@ -3,7 +3,8 @@ const app = express();
 const connect = require("./utils/db").connect;
 const config = require("./config");
 const itemRouter = require("./ressources/item/item.router");
-
+const cors = require("cors");
+app.use(cors());
 app.use("/item", itemRouter);
 
 module.exports.start = async () => {
