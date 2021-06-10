@@ -6,6 +6,7 @@ const itemRouter = require("./ressources/item/item.router");
 const cors = require("cors");
 app.use(cors());
 app.use("/", itemRouter);
+app.get("/favicon.ico", (req, res) => res.status(204));
 
 module.exports.start = async () => {
   try {
