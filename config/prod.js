@@ -1,1 +1,4 @@
-module.exports = { dbUrl: process.env.MONGODB_URI, port: process.env.PORT };
+module.exports = {
+  dbUrl: process.env.dbUri,
+  port: process.env.PORT,
+};

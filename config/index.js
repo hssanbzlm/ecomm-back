@@ -16,8 +16,6 @@ switch (env) {
   case "production":
     envConfig = require("./prod");
     break;
-  default:
-    envConfig = require("./dev");
 }
 
 module.exports = merge(baseConfig, envConfig);
